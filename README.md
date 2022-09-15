@@ -3,11 +3,11 @@
 apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
 
 #CRIAR USUÁRIO VIA TOKEN ID
-#COMPLEMENTO PARA O SCRIPT SSHPLUS PARA CRIAR USUÁRIO VIA TOKEN ID
-Clonado kkkk
+#COMPLEMENTO PARA O SCRIPT SSHPLUS
+PARA CRIAR USUÁRIO VIA TOKEN ID
 
 
-Dê esse comando na vps com script sshplus
+# DÊ ESSE COMANDO NA VPS COM SCRIPT SSHPLUS
 
 cd /bin
 rm criarusuario
