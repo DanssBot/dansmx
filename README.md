@@ -21,7 +21,7 @@ cd $HOME
 TESTADO NA ORACLE ARM E OCH 
 UBUNTU 18
 
-#Acessa Root
+# Acessa Root
 
 wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
 # SSHPLUS
