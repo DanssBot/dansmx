@@ -6,7 +6,7 @@ Criar com token id ou somente ssh
 
 # SSHPLUS
 
-apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/Plus && chmod 777 Plus && ./Plus
+apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/DanssBot/dansmx/main/Plus && chmod 777 Plus && ./Plus
 
 # Acesso Root
 
