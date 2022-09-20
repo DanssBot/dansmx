@@ -114,7 +114,7 @@ echo ""
 clear
 echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"|lolcat
 echo ""
-echo -e "                 \033[1;33m• \033[1;31mATENCIOM \033[1;33m• \033[0m"|lolcat
+echo -e "                 \033[1;33m• \033[1;31mATENCIOn \033[1;33m• \033[0m"|lolcat
 echo ""
 echo -e "\033[1;33mUna base de datos de usuarios \033[1;32m(usuarios.db) \033[1;33mFoi"|lolcat
 echo -e "¡Mudar! Quiere mantenerlo preservando el límite"|lolcat
@@ -190,12 +190,12 @@ echo "clear" >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
   echo 'figlet -k dansmx | lolcat' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
-  echo 'echo -e " NOMBRE DE SERVIDOR : $HOSTNAME"' >>/root/.bashrc
-  echo 'echo -e " SERVIDOR LIGADO A : $(uptime -p)"' >>/root/.bashrc
-  echo 'echo -e " FECHA : $DATE"' >>/root/.bashrc
-  echo 'echo -e " HORA : $TIME"' >>/root/.bashrc
+  echo 'echo -e " NOMBRE DEL SERVIDOR : $HOSTNAME"' >>/root/.bashrc
+  echo 'echo -e " TIEMPO DEL SERVIDOR : $(uptime -p)"' >>/root/.bashrc
+  echo 'echo -e " FECHA ACTUAL : $DATE"' >>/root/.bashrc
+  echo 'echo -e " HORA DEL SERVIDOR: $TIME"' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
-  echo 'echo -e " BIENVENIDO AL PANEL MENU!"' >>.bashrc
+  echo 'echo -e " HOLA BIENVENIDO AL PANEL MENU!"' >>.bashrc
   echo 'echo -e "\033[1;31m DIGITE (menu) PARA ENTRAR\033[0m."' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
 figlet "      Bienvenido" | lolcat
@@ -205,5 +205,5 @@ echo ""
 figlet "      Bienvenido" | lolcat
 echo -e "        \033[1;33m • \033[1;32mINSTALACION CONCLUIDA\033[1;33m • \033[0m"
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAS INFORMACIONES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@SSHPLUS\033[0m"
+echo -e "\033[1;33m MAS INFORMACIONES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@DansMxx\033[0m"
 rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
