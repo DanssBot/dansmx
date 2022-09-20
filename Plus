@@ -158,8 +158,6 @@ echo "clear" >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
   echo 'figlet -k dansmx | lolcat' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
-  echo 'bash /bin/ejecutar/echo-ram.sh' >>/root/.bashrc
-  echo 'echo -e " FECHA DE INSTALACIÓN : " $(cat < /bin/ejecutar/fecha)' >>/root/.bashrc
   echo 'echo -e " NOMBRE DE SERVIDOR : $HOSTNAME"' >>/root/.bashrc
   echo 'echo -e " SERVIDOR LIGADO A : $(uptime -p)"' >>/root/.bashrc
   echo 'echo -e " FECHA : $DATE"' >>/root/.bashrc
