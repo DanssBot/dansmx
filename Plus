@@ -112,17 +112,17 @@ sleep 1s
 echo ""
 [[ -f "$HOME/usuarios.db" ]] && {
 clear
-echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"|lolcat
 echo ""
-echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
+echo -e "                 \033[1;33m• \033[1;31mATENCIOM \033[1;33m• \033[0m"|lolcat
 echo ""
-echo -e "\033[1;33mUna base de datos de usuarios \033[1;32m(usuarios.db) \033[1;33mFoi"
-echo -e "¡Fundar! Quiero mantenerlo preservando el límite"
-echo -e "Conexiones de usuarios simultáneos ? Ou Deseja"
-echo -e "crear una nueva base de datos ?\033[0m"
-echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mMantener la Base de Datos Actual\033[0m"
-echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCrear una Nueva Base de Datos\033[0m"
-echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+echo -e "\033[1;33mUna base de datos de usuarios \033[1;32m(usuarios.db) \033[1;33mFoi"|lolcat
+echo -e "¡Mudar! Quiere mantenerlo preservando el límite"|lolcat
+echo -e "Conexiones de usuarios simultáneos ? Ou Deseja"|lolcat
+echo -e "crear una nueva base de datos ?\033[0m"|lolcat
+echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mMantener la Base de Datos Actual\033[0m"|lolcat
+echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCrear una Nueva Base de Datos\033[0m"|lolcat
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"|lolcat
 echo ""
 tput setaf 2 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
 } || {
@@ -130,13 +130,13 @@ awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/u
 }
 [[ "$optiondb" = '2' ]] && awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
 clear
-figlet "      INICIANDO" | lolcat
+figlet "      Actualizando" | lolcat
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-18s\n' " ESPERE A LA INSTALACIÓN" ; tput sgr0
 echo ""
 echo ""
-echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mATUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"
+echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mACTUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"|lolcat
 echo ""
-echo -e "    \033[1;33mLAS ACTUALIZACIONES SUELEN TOMAR UN POCO DE TIEMPO!\033[0m"
+echo -e "    \033[1;33mLAS ACTUALIZACIONES SUELEN TOMAR UN POCO DE TIEMPO!\033[0m"|lolcat
 echo ""
 fun_attlist () {
 apt-get update -y
@@ -146,10 +146,10 @@ echo "crz: $(date)" > /usr/share/.plus/.plus
 fun_bar 'fun_attlist'
 clear
 echo ""
-figlet "      Instalando" | lolcat
-echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PACOTES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
+figlet "      Paquetes" | lolcat
+echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PAQUETES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"|lolcat
 echo ""
-echo -e "\033[1;33mALGUNOS PAQUETES SON EXTREMADAMENTE NECESARIOS !\033[0m"
+echo -e "\033[1;33mALGUNOS PAQUETES SON EXTREMADAMENTE NECESARIOS !\033[0m"|lolcat
 echo ""
 inst_pct () {
 _pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip")
@@ -166,9 +166,9 @@ echo ""
     date=$(date '+%Y-%m-%d <> %H:%M:%S')
     echo -e "\033[1;37m $system                          $date"
     figlet "     Optimizando" | lolcat
-    echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                OTIMIZANDO PYTHON               \033[1;33m \033[0m\033[01;31m║"
+    echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                OPTIMIZANDO PYTHON               \033[1;33m \033[0m\033[01;31m║"
     echo -e "\033[01;31m║\033[0m"
-    fun_bar 'Espere Estamos Optimizando Python'|lolcat
+    fun_bar 'POR FAVOR ESPERE ACTUALIZANDO PAYTHON'|lolcat
     clear
 
 echo ""
