@@ -256,6 +256,7 @@ fun_usertoken() {
     tput setaf 7
     tput setab 4
     tput bold
+    figlet "    -dansmx" | lolcat
     printf '%30s%s%-15s\n' "Criar Token SSH"
     tput sgr0
     echo ""
@@ -328,7 +329,7 @@ clear
 tput setaf 7
 tput setab 4
 tput bold
-figlet "     ssh-token" | lolcat
+figlet "    -dansmx" | lolcat
 #printf '%30s%s%-15s\n' "Elij "
 tput sgr0
 echo ""
@@ -376,7 +377,7 @@ else
     tput setaf 7
     tput setab 4
     tput bold
-    figlet "     usuario ssh" | lolcat
+    figlet "    -dansmx" | lolcat
     #printf '%30s%s%-15s\n' "Criar Usuário SSH"
     tput sgr0
     echo ""
