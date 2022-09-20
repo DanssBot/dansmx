@@ -712,6 +712,7 @@ SCOLOR='\033[0m'
 			}
 		else
 			clear
+                        figlet "    -dansmx" | lolcat
 			echo -e "\E[44;1;37m              INSTALAR SSL TUNNEL               \E[0m"
 			echo ""
 			echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;33mINSTALAR SSL TUNNEL PADRÃO\033[0m"
@@ -1250,6 +1251,7 @@ SCOLOR='\033[0m'
 				fun_conexao
 			}
 			echo ""
+                        figlet "    -dansmx" | lolcat
 			echo -e "\033[1;33mVERIFICANDO PORTA..."
 			verif_ptrs $porta
 			echo ""
@@ -1489,6 +1491,7 @@ exit 0' >$RCLOCAL
 
 	fun_socks() {
 		clear
+                figlet "    -dansmx" | lolcat
 		echo -e "\E[44;1;37m            GERENCIAR PROXY SOCKS             \E[0m"
 		echo ""
 		[[ $(netstat -nplt | grep -wc 'python') != '0' ]] && {
@@ -2048,7 +2051,7 @@ exit 0' >$RCLOCAL
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			echo -e "\E[44;1;37m                MODO DE CONEXAO                 \E[0m\n"
+			figlet "    -dansmx" | lolcat
 			echo -e "\033[1;32mSERVICO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
 			[[ "$(netstat -tlpn | grep 'docker' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICO: \033[1;33mCHISEL: \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'docker' | awk {'print $4'} | cut -d: -f2 | xargs)"
@@ -2111,7 +2114,6 @@ exit 0' >$RCLOCAL
 			}
 			echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			echo ""
-                        figlet "    -dansmx" | lolcat
 			echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mOPENSSH $sts6\033[1;31m
 [\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mSQUID PROXY $sts1\033[1;31m
 [\033[1;36m03\033[1;31m] \033[1;37m• \033[1;33mDROPBEAR $sts2\033[1;31m
