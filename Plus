@@ -173,8 +173,6 @@ echo "clear" >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
 figlet "      Bienvenido" | lolcat
 echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
-echo "DIGITE SEU NICK EXEMPLO (ANDRE CRACKER X)"; read name
-echo "$name" >/root/name
 clear
 echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
