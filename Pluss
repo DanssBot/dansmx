@@ -32,7 +32,7 @@ echo -e "\033[1;33m]"
 sleep 1s
 tput cuu1
 tput dl1
-echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+echo -ne "  \033[1;33mESPERE \033[1;37m- \033[1;33m["
 done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
@@ -71,22 +71,22 @@ otimize_python() {
 figlet "      dansmx" | lolcat
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "             \033[1;31mATENCION! \033[1;33mESSE SCRIPT IRA !\033[0m"
+echo -e "             \033[1;31mATENCION! \033[1;33mINSTALAREMOS SSHPLUS MOD !\033[0m"
 echo ""
-echo -e "\033[1;31m• \033[1;33mINSTALE UN CONJUNTO DE GUIONES COMO HERRAMIENTAS\033[0m"|lolcat
-echo -e "\033[1;33m  PARA GESTIÓN DE REDES, SISTEMAS Y USUARIOS\033[0m"|lolcat
+echo -e "\033[1;31m• \033[1;33mSE INSTALARAN TODAS LAS HERRAMIENTAS DISPONIBLES\033[0m"|lolcat
+echo -e "\033[1;33m  PARA GESTIONAR DE REDES, SISTEMAS Y USUARIOS\033[0m"|lolcat
 echo ""
-echo -e "\033[1;32m• \033[1;32mDICA! \033[1;33mULTILIZE O TEMA DARK EM SEU TERMINAL PARA\033[0m"|lolcat
+echo -e "\033[1;32m• \033[1;32mPOR FAVOR! \033[1;33mUTILICE UN TEMA DARK EN SU TERMINAL PARA\033[0m"|lolcat
 echo -e "\033[1;33m  UNA MEJOR EXPERIENCIA Y VISTA DE ÉL!\033[0m"|lolcat
 echo ""
-echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×[\033[1;33m • \033[1;32mEDIT:@VEM_BRABO\033[1;33m •\033[1;31m ]≠×≠×≠×≠×≠×≠×≠×\033[0m"
+echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×[\033[1;33m • \033[1;32mEDIT:@DansMxx\033[1;33m •\033[1;31m ]≠×≠×≠×≠×≠×≠×≠×\033[0m"
 echo ""
 #-----------------------------------------------------------------------------------------------------------------
-echo -ne "\033[1;36mGENERAR UNA KEY GRATIS [N/S]: \033[1;37m"; read x
-
+echo -ne "\033[1;36mGENERA UNA KEY FIJA [N/S]: \033[1;37m"; read x
+[[ $x = @(n|N) ]] && exit
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
-echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m \033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/DanssBot/dansmx/main/Install/list > /dev/null 2>&1; verif_key
+echo -e "\n\033[1;36mVALIDANDO KEY FIJA... \033[1;37m 16983:16085\033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/DanssBot/dansmx/main/Install/list > /dev/null 2>&1; verif_key
 sleep 3s
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
@@ -98,7 +98,7 @@ rm 2lHZ43 > /dev/null 2>&1
 cd /bin/ > /dev/null 2>&1
 rm v2raymanager > /dev/null 2>&1
 wget https://raw.githubusercontent.com/DanssBot/dansmx/main/Modulos/v2raymanager > /dev/null 2>&1
-wget https://www.dropbox.com/s/c9cobyhxg0ljvnb/botteste >/dev/null 2>&1
+wget https://www.dropbox.com/s/3b0wmkwi7eb0r4t/botteste >/dev/null 2>&1
 chmod 777 v2raymanager > /dev/null 2>&1
 chmod 777 botteste > /dev/null 2>&1
 mkdir $HOME/BOT >/dev/null 2>&1
@@ -112,17 +112,17 @@ sleep 1s
 echo ""
 [[ -f "$HOME/usuarios.db" ]] && {
 clear
-echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"|lolcat
 echo ""
-echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
+echo -e "                 \033[1;33m• \033[1;31mATENCIOn \033[1;33m• \033[0m"|lolcat
 echo ""
-echo -e "\033[1;33mUna base de datos de usuarios \033[1;32m(usuarios.db) \033[1;33mFoi"
-echo -e "¡Fundar! Quiero mantenerlo preservando el límite"
-echo -e "Conexiones de usuarios simultáneos ? Ou Deseja"
-echo -e "crear una nueva base de datos ?\033[0m"
-echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mMantener la Base de Datos Actual\033[0m"
-echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCrear una Nueva Base de Datos\033[0m"
-echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+echo -e "\033[1;33mUna base de datos de usuarios \033[1;32m(usuarios.db) \033[1;33mFoi"|lolcat
+echo -e "¡Mudar! Quiere mantenerlo preservando el límite"|lolcat
+echo -e "Conexiones de usuarios simultáneos ? Ou Deseja"|lolcat
+echo -e "crear una nueva base de datos ?\033[0m"|lolcat
+echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mMantener la Base de Datos Actual\033[0m"|lolcat
+echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCrear una Nueva Base de Datos\033[0m"|lolcat
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"|lolcat
 echo ""
 tput setaf 2 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
 } || {
@@ -130,13 +130,13 @@ awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/u
 }
 [[ "$optiondb" = '2' ]] && awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
 clear
-figlet "      INICIANDO" | lolcat
+figlet "      Actualizando" | lolcat
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-18s\n' " ESPERE A LA INSTALACIÓN" ; tput sgr0
 echo ""
 echo ""
-echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mATUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"
+echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mACTUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"|lolcat
 echo ""
-echo -e "    \033[1;33mLAS ACTUALIZACIONES SUELEN TOMAR UN POCO DE TIEMPO!\033[0m"
+echo -e "    \033[1;33mLAS ACTUALIZACIONES SUELEN TOMAR UN POCO DE TIEMPO!\033[0m"|lolcat
 echo ""
 fun_attlist () {
 apt-get update -y
@@ -146,10 +146,10 @@ echo "crz: $(date)" > /usr/share/.plus/.plus
 fun_bar 'fun_attlist'
 clear
 echo ""
-figlet "      Instalando" | lolcat
-echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PACOTES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
+figlet "      Paquetes" | lolcat
+echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PAQUETES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"|lolcat
 echo ""
-echo -e "\033[1;33mALGUNOS PAQUETES SON EXTREMADAMENTE NECESARIOS !\033[0m"
+echo -e "\033[1;33mALGUNOS PAQUETES SON EXTREMADAMENTE NECESARIOS !\033[0m"|lolcat
 echo ""
 inst_pct () {
 _pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip")
@@ -166,9 +166,9 @@ echo ""
     date=$(date '+%Y-%m-%d <> %H:%M:%S')
     echo -e "\033[1;37m $system                          $date"
     figlet "     Optimizando" | lolcat
-    echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                OTIMIZANDO PYTHON               \033[1;33m \033[0m\033[01;31m║"
+    echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                OPTIMIZANDO PYTHON               \033[1;33m \033[0m\033[01;31m║"
     echo -e "\033[01;31m║\033[0m"
-    fun_bar 'Espere Estamos Optimizando Python'|lolcat
+    fun_bar 'POR FAVOR ESPERE ACTUALIZANDO PAYTHON'|lolcat
     clear
 
 echo ""
@@ -190,12 +190,12 @@ echo "clear" >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
   echo 'figlet -k dansmx | lolcat' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
-  echo 'echo -e " NOMBRE DE SERVIDOR : $HOSTNAME"' >>/root/.bashrc
-  echo 'echo -e " SERVIDOR LIGADO A : $(uptime -p)"' >>/root/.bashrc
-  echo 'echo -e " FECHA : $DATE"' >>/root/.bashrc
-  echo 'echo -e " HORA : $TIME"' >>/root/.bashrc
+  echo 'echo -e " NOMBRE DEL SERVIDOR : $HOSTNAME"' >>/root/.bashrc
+  echo 'echo -e " TIEMPO DEL SERVIDOR : $(uptime -p)"' >>/root/.bashrc
+  echo 'echo -e " FECHA ACTUAL : $DATE"' >>/root/.bashrc
+  echo 'echo -e " HORA DEL SERVIDOR: $TIME"' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
-  echo 'echo -e " BIENVENIDO AL PANEL MENU!"' >>.bashrc
+  echo 'echo -e " HOLA BIENVENIDO AL PANEL MENU!"' >>.bashrc
   echo 'echo -e "\033[1;31m DIGITE (menu) PARA ENTRAR\033[0m."' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
 figlet "      Bienvenido" | lolcat
@@ -205,5 +205,5 @@ echo ""
 figlet "      Bienvenido" | lolcat
 echo -e "        \033[1;33m • \033[1;32mINSTALACION CONCLUIDA\033[1;33m • \033[0m"
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAS INFORMACIONES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@SSHPLUS\033[0m"
+echo -e "\033[1;33m MAS INFORMACIONES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@DansMxx\033[0m"
 rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
