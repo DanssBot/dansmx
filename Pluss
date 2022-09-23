@@ -243,7 +243,12 @@ echo "clear" >>/root/.bashrc
   rm -f /root/.bashrc.cp
   echo 'DATE=$(date +"%d-%m-%y")' >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
-  echo 'figlet -k dansmx | lolcat' >>/root/.bashrc
+  echo 'echo -e "\033[1;31m————————————————————————————————————————————————————" ' >>.bashrc
+echo 'echo -e "\033[1;93m════════════════════════════════════════════════════" ' >>.bashrc
+echo 'figlet -w 85 -f smslant "         SCRIPT
+     DANSMX"   | lolcat' >>.bashrc
+echo 'echo -e "\033[1;93m════════════════════════════════════════════════════" ' >>.bashrc
+echo 'echo -e "\033[1;31m————————————————————————————————————————————————————" ' >>.bashrc
   echo 'echo -e ""' >>/root/.bashrc
   echo 'echo -e " NOMBRE DEL SERVIDOR : $HOSTNAME"' >>/root/.bashrc
   echo 'echo -e " TIEMPO DEL SERVIDOR : $(uptime -p)"' >>/root/.bashrc
@@ -253,7 +258,7 @@ echo "clear" >>/root/.bashrc
   echo 'echo -e " HOLA BIENVENIDO AL PANEL MENU!"' >>.bashrc
   echo 'echo -e "\033[1;31m DIGITE (menu) PARA ENTRAR\033[0m."' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
-figlet "      Bienvenido" | lolcat
+figlet "    Bienvenido" | lolcat
 echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
 clear
 echo ""
