@@ -32,9 +32,9 @@ fun_bar () {
 
 clear&&clear
 echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
-echo -e "\033[1;32m             Couty SSH WEBSOCKET SSH "
+echo -e "\033[1;32m             DANSMX SSH WEBSOCKET SSH "
 echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
-echo -e "\033[1;37m      WEBSOCKET SSH USARA A PORTA 80 e 443"
+echo -e "\033[1;37m      WEBSOCKET SSH USARA EL PUERTO 80 e 443"
 echo
 echo -e "\033[1;33m                 INSTALANDO SSL... "
 inst_ssl () {
@@ -56,7 +56,7 @@ rm -rf /root/stunnel.key
 fun_bar 'inst_ssl'
 echo -e "\033[1;33m                 CONFIGURANDO SSL.. "
 fun_bar 'inst_ssl'
-read -p "  STATUS DE CONEXÃO :" msgbanner
+read -p "  STATUS DE CONEXION :" msgbanner
 [[ "$msgbanner" = "" ]]&& msgbanner="SSL + Pay"
 echo 
 echo -e "\033[1;33m                 CONFIGURANDO PYTHON.. "
@@ -344,7 +344,7 @@ screen -dmS pythonwe python proxy.py -p 80&
 }
 fun_bar 'inst_py'
 rm -rf proxy.py
-echo -e "                 INSTALAÇÃO CONCLUIDA "
+echo -e "                 INSTALACION EXITOSA "
 
 echo 
 
