@@ -190,7 +190,7 @@ figlet "      Actualizando" | lolcat
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-18s\n' " ESPERE A LA INSTALACIÓN" ; tput sgr0
 echo ""
 echo ""
-echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mACTUALIZANDO SISTEMA \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"|lolcat
+echo -e "\033[01;31m║\033[1;31m\033[5;34;47m    ACTUALIZANDO PAQUETES DEL SISTEMA        \033[1;33m \033[0m\033[01;31m║"
 echo ""
 echo -e "    \033[1;33mLAS ACTUALIZACIONES SUELEN TOMAR UN POCO DE TIEMPO!\033[0m"|lolcat
 echo ""
