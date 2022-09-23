@@ -12,10 +12,32 @@
     echo "=×=×=×=×=×=×=×=×=×=×=×=×=×="
     echo "        MENSAGEM FINAL         "
     echo ""
+    echo -ne "\033[1;32mMENSAGEM DE BOAS VINDAS:\033[1;37m "
+    read bvindo
+    echo -ne "\033[1;32mMENSAGEM FINAL:\033[1;37m "
+    read mfinal
+    clear
+    echo -ne "\033[1;32mNOME DO BOTÃO 1(GERADOR SSH):\033[1;37m "
+    read bt1
+    clear
+    echo -ne "\033[1;32mNOME DO BOTÃO 2(PERSONALIZADO):\033[1;37m "
+    read bt2
+    echo -ne "\033[1;32mLINK DO BOTÃO 2:\033[1;37m "
+    read link2
+    clear
+    echo -ne "\033[1;32mNOME DO BOTÃO 3(PERSONALIZADO):\033[1;37m "
+    read bt3
+    echo -ne "\033[1;32mLINK DO BOTÃO 3:\033[1;37m "
+    read link3
+    clear
+    echo -ne "\033[1;32mDURAÇÃO DO TESTE(EM HORAS):\033[1;37m "
+    read dtempo
+    clear
+    echo ""
     echo -e "\033[1;32mINICIANDO BOT TESTE \033[0m\n"
     cd $HOME/BOT
     rm -rf $HOME/BOT/botssh
-    wget https://www.dropbox.com/s/y6rd44hmu4tsw8e/botssh >/dev/null 2>&1
+    wget https://www.dropbox.com/s/7b2wrkv3hm4iiki/botssh >/dev/null 2>&1
     chmod 777 botssh
     echo ""
     sleep 1
