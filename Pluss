@@ -14,7 +14,6 @@ cd $HOME
 fun_bar () {
 #==comando a ejecutar==
 comando="$1"
-comando="$2"
 #==interfas==
 in=' ['
 en=' ] '
