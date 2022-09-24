@@ -83,7 +83,7 @@ while [[ -d /proc/$pid ]]; do
 		echo -ne " $en"
 		sleep 0.2
 done
-done
+
 [[ -e $HOME/fim ]] && rm $HOME/fim && break
 echo -e "\033[1;33m]"
 sleep 1s
