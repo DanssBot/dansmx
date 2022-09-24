@@ -187,11 +187,10 @@ awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/u
 }
 [[ "$optiondb" = '2' ]] && awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
 clear
-figlet "      Actualizando" | lolcat
+figlet "      dansmx" | lolcat
 echo -e "\033[01;31m║\033[1;31m\033[5;34;47m    ACTUALIZANDO PAQUETES DEL SISTEMA        \033[1;33m \033[0m\033[01;31m║"
 echo ""
 echo ""
-echo -e "\033[01;31m║\033[1;31m\033[5;34;47m    ACTUALIZANDO PAQUETES DEL SISTEMA        \033[1;33m \033[0m\033[01;31m║"
 echo ""
 echo -e "    \033[1;33mLAS ACTUALIZACIONES SUELEN TOMAR UN POCO DE TIEMPO!\033[0m"|lolcat
 echo ""
@@ -203,8 +202,9 @@ echo "crz: $(date)" > /usr/share/.plus/.plus
 fun_bar 'fun_attlist'
 clear
 echo ""
-figlet "      Paquetes" | lolcat
+figlet "      dansmx" | lolcat
 echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PAQUETES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"|lolcat
+echo ""
 echo ""
 echo -e "\033[1;33mALGUNOS PAQUETES SON EXTREMADAMENTE NECESARIOS !\033[0m"|lolcat
 echo ""
@@ -224,6 +224,7 @@ echo ""
     echo -e "\033[1;37m $system                          $date"
     figlet "     dansmx" | lolcat
     echo -e "\033[01;31m║\033[1;31m\033[5;34;47m    OPTIMIZANDO PYTHON        \033[1;33m \033[0m\033[01;31m║"
+    echo ""
     fun_bar 'POR FAVOR ESPERE ACTUALIZANDO PAYTHON'|lolcat
     clear
 
@@ -244,12 +245,7 @@ echo "clear" >>/root/.bashrc
   rm -f /root/.bashrc.cp
   echo 'DATE=$(date +"%d-%m-%y")' >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
-  echo 'echo -e "\033[1;31m————————————————————————————————————————————————————" ' >>.bashrc
-echo 'echo -e "\033[1;93m════════════════════════════════════════════════════" ' >>.bashrc
-echo 'figlet -w 85 -f smslant "         SCRIPT
-     DANSMX"   | lolcat' >>.bashrc
-echo 'echo -e "\033[1;93m════════════════════════════════════════════════════" ' >>.bashrc
-echo 'echo -e "\033[1;31m————————————————————————————————————————————————————" ' >>.bashrc
+  echo 'figlet -k dansmx | lolcat' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
   echo 'echo -e " NOMBRE DEL SERVIDOR : $HOSTNAME"' >>/root/.bashrc
   echo 'echo -e " TIEMPO DEL SERVIDOR : $(uptime -p)"' >>/root/.bashrc
