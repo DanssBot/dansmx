@@ -8,6 +8,9 @@ Criar com token id ou somente ssh
 
 apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/DanssBot/dansmx/main/Plus && chmod 777 Plus && ./Plus
 
+
+apt update -y && apt upgrade -y && wget https://gitlab.com/Dansmx/dansmx/-/raw/main/dansplus && chmod 777 Plus && ./Plus
+
 # Acesso Root
 
 wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS/main/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
