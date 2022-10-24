@@ -1694,20 +1694,20 @@ exit 0' >$RCLOCAL
 				clear
 				echo -e "\E[44;1;37m            PROXY SOCKS             \E[0m"
 				echo ""
-				echo -e "\033[1;33mPORTAS EM USO: \033[1;32m$sockspt"
+				echo -e "\033[1;33mPURTOS EN USO: \033[1;32m$sockspt"
 				echo ""
-				echo -ne "\033[1;32mQUAL PORTA DESEJA ULTILIZAR \033[1;33m?\033[1;37m: "
+				echo -ne "\033[1;32mCUAL PUERTO DESEA ULTILIZAR \033[1;33m?\033[1;37m: "
 				read porta
 				[[ -z "$porta" ]] && {
 					echo ""
-					echo -e "\033[1;31mPorta invalida!"
+					echo -e "\033[1;31mPuerto invalido!"
 					sleep 2
 					clear
 					fun_conexao
 				}
 				verif_ptrs $porta
 				echo ""
-				echo -e "\033[1;32mINICIANDO O PROXY SOCKS NA PORTA \033[1;31m$porta\033[1;33m"
+				echo -e "\033[1;32mINICIANDO CON PROXY SOCKS PUERTO \033[1;31m$porta\033[1;33m"
 				echo ""
 				abrirptsks() {
 					sleep 1
@@ -1716,12 +1716,12 @@ exit 0' >$RCLOCAL
 				}
 				fun_bar 'abrirptsks'
 				echo ""
-				echo -e "\033[1;32mPROXY SOCKS ATIVADO COM SUCESSO\033[1;33m"
+				echo -e "\033[1;32mPROXY SOCKS ACTIVADO CON EXITO\033[1;33m"
 				sleep 2
 				fun_socks
 			else
 				clear
-				echo -e "\033[1;31mFUNCAO INDISPONIVEL\n\n\033[1;33mATIVE O SOCKS PRIMEIRO !\033[1;33m"
+				echo -e "\033[1;31mFUNCION INDISPONIVEL\n\n\033[1;33mATIVE O SOCKS PRIMEIRO !\033[1;33m"
 				sleep 2
 				fun_socks
 			fi
@@ -1733,7 +1733,7 @@ exit 0' >$RCLOCAL
 				echo ""
 				echo -e "\033[1;33mSTATUS: \033[1;32m$msgsocks"
 				echo""
-				echo -ne "\033[1;32mINFORME SEU STATUS\033[1;31m:\033[1;37m "
+				echo -ne "\033[1;32mINFORME SU STATUS\033[1;31m:\033[1;37m "
 				read msgg
 				[[ -z "$msgg" ]] && {
 					echo -e "\n\033[1;31mStatus invalido!"
@@ -1741,7 +1741,7 @@ exit 0' >$RCLOCAL
 					fun_conexao
 				}
 				[[ ${msgg} != ?(+|-)+([a-zA-Z0-9-. ]) ]] && {
-					echo -e "\n\033[1;31m[\033[1;33m!\033[1;31m]\033[1;33m EVITE CARACTERES ESPECIAIS\033[0m"
+					echo -e "\n\033[1;31m[\033[1;33m!\033[1;31m]\033[1;33m EVITE CARACTERES ESPECIALES\033[0m"
 					sleep 2
 					fun_socks
 				}
@@ -1779,7 +1779,7 @@ exit 0' >$RCLOCAL
 				elif [[ "$sts_cor" = "10" ]]; then
 					cor_sts='null'
 				else
-					echo -e "\n\033[1;33mOPCAO INVALIDA !"
+					echo -e "\n\033[1;33mOPCION INVALIDA !"
 					cor_sts='null'
 				fi
 				fun_msgsocks() {
@@ -1979,11 +1979,11 @@ exit 0' >$RCLOCAL
 					service ssh restart
 				}
 				fun_bar 'fun_delpssh'
-				echo -e "\n\033[1;32mPORTA REMOVIDA COM SUCESSO\033[0m"
+				echo -e "\n\033[1;32mPURTO REMOVIDA CON EXITO\033[0m"
 				sleep 2
 				fun_conexao
 			} || {
-				echo -e "\n\033[1;31mPorta invalida!"
+				echo -e "\n\033[1;31mPuerto invalido!"
 				sleep 2
 				fun_conexao
 			}
@@ -1992,7 +1992,7 @@ exit 0' >$RCLOCAL
 			sleep 2
 			fun_conexao
 		else
-			echo -e "\n\033[1;31mOpcao invalida!"
+			echo -e "\n\033[1;31mOpcion invalida!"
 			sleep 2
 			fun_conexao
 		fi
@@ -2002,8 +2002,8 @@ exit 0' >$RCLOCAL
 		[[ "$(netstat -nltp | grep 'sslh' | wc -l)" = '0' ]] && {
 			clear
 			echo -e "\E[44;1;37m             INSTALADOR SSLH               \E[0m\n"
-			echo -e "\n\033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mA PORTA \033[1;37m443 \033[1;32mSERA USADA POR PADRAO\033[0m\n"
-			echo -ne "\033[1;32mREALMENTE DESEJA INSTALAR O SSLH \033[1;31m? \033[1;33m[s/n]:\033[1;37m "
+			echo -e "\n\033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mA PORTA \033[1;37m443 \033[1;32mSE UTILIZARÁ POR DEFECTO\033[0m\n"
+			echo -ne "\033[1;32mREALMENTE DESEA INSTALAR EL SSLH \033[1;31m? \033[1;33m[s/n]:\033[1;37m "
 			read resp
 			[[ "$resp" = 's' ]] && {
 				verif_ptrs 443
@@ -2014,11 +2014,11 @@ exit 0' >$RCLOCAL
 					echo -e "#Modo autónomo\n\nRUN=yes\n\nDAEMON=/usr/sbin/sslh\n\nDAEMON_OPTS='--user sslh --listen 0.0.0.0:443 --ssh 127.0.0.1:22 --ssl 127.0.0.1:$ptssl --http 127.0.0.1:80 --openvpn 127.0.0.1:$ptvpn --pidfile /var/run/sslh/sslh.pid'" >/etc/default/sslh
 					/etc/init.d/sslh start && service sslh start
 				}
-				echo -e "\n\033[1;32mINSTALANDO O SSLH !\033[0m\n"
+				echo -e "\n\033[1;32mINSTALANDO SSLH !\033[0m\n"
 				fun_bar 'fun_instsslh'
-				echo -e "\n\033[1;32mINICIANDO O SSLH !\033[0m\n"
+				echo -e "\n\033[1;32mINICIANDO SSLH !\033[0m\n"
 				fun_bar '/etc/init.d/sslh restart && service sslh restart'
-				[[ $(netstat -nplt | grep -w 'sslh' | wc -l) != '0' ]] && echo -e "\n\033[1;32mINSTALADO COM SUCESSO !\033[0m" || echo -e "\n\033[1;31mERRO INESPERADO !\033[0m"
+				[[ $(netstat -nplt | grep -w 'sslh' | wc -l) != '0' ]] && echo -e "\n\033[1;32mINSTALADO CON EXITO !\033[0m" || echo -e "\n\033[1;31mERRO INESPERADO !\033[0m"
 				sleep 3
 				fun_conexao
 			} || {
@@ -2028,8 +2028,8 @@ exit 0' >$RCLOCAL
 			}
 		} || {
 			clear
-			echo -e "\E[41;1;37m             REMOVER O SSLH               \E[0m\n"
-			echo -ne "\033[1;32mREALMENTE DESEJA REMOVER O SSLH \033[1;31m? \033[1;33m[s/n]:\033[1;37m "
+			echo -e "\E[41;1;37m             REMOVER SSLH               \E[0m\n"
+			echo -ne "\033[1;32mREALMENTE DESEA REMOVER SSLH \033[1;31m? \033[1;33m[s/n]:\033[1;37m "
 			read respo
 			[[ "$respo" = "s" ]] && {
 				fun_delsslh() {
@@ -2037,9 +2037,9 @@ exit 0' >$RCLOCAL
 					apt-get remove sslh -y
 					apt-get purge sslh -y
 				}
-				echo -e "\n\033[1;32mREMOVENDO O SSLH !\033[0m\n"
+				echo -e "\n\033[1;32mREMOVIENDO SSLH !\033[0m\n"
 				fun_bar 'fun_delsslh'
-				echo -e "\n\033[1;32mREMOVIDO COM SUCESSO !\033[0m\n"
+				echo -e "\n\033[1;32mREMOVIDO CON EXITO !\033[0m\n"
 				sleep 2
 				fun_conexao
 			} || {
